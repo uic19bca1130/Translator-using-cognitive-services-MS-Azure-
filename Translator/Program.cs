@@ -22,7 +22,6 @@ class Program
         var requestBody = JsonConvert.SerializeObject(body);
 
         using (var client = new HttpClient())
-        using (var request = new HttpRequestMessage())
         {
             // Build the request.
             request.Method = HttpMethod.Post;
